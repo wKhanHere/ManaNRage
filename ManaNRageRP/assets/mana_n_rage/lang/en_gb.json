@@ -1,0 +1,4 @@
+{
+    "death.attack.sculk_explosion": "%1$s was consumed by a sculk explosion",
+    "death.attack.sculk_explosion.player": "%1$s was consumed by a sculk explosion by %2$s"
+}

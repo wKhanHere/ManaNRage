@@ -1,0 +1,38 @@
+{
+	"description": "",
+	"max_level": 1,
+	"slots": ["feet"],
+	"supported_items": [],
+	"weight": 1,
+	"anvil_cost": 0,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"effects": {
+		"minecraft:tick": [{
+			"effect": {
+				"type": "all_of",
+				"effects": [{
+					"type": "explode",
+					"damage_type":"mana_n_rage:sculk_explosion",
+					"attribute_to_user": true,
+					"knockback_multiplier": 1,
+					"radius": 3,
+					"create_fire": false,
+					"block_interaction": "none",
+					"small_particle": { "type": "minecraft:sculk_charge_pop" },
+					"large_particle": { "type": "minecraft:sonic_boom" },
+					"sound": "minecraft:entity.warden.heartbeat"
+				},{
+					"type": "run_function",
+					"function": "mana_n_rage:mob/sculk_mage/eyes/dispose_exploding_eye"
+				}]
+			}
+		}]
+	}
+}

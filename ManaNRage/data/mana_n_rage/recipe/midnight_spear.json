@@ -1,0 +1,34 @@
+{
+	"type": "crafting_shaped",
+	"key": {
+		"X": "minecraft:sculk",
+		"B": "minecraft:breeze_rod",
+		"N": "minecraft:netherite_ingot"
+	},
+	"pattern": [
+		" XN",
+		" BX",
+		"B  "
+	],
+	"result": {
+		"id": "minecraft:netherite_spear",
+		"components": {
+			"!jukebox_playable": {},
+			"item_name": {"text":"Midnight Spear","color":"blue"},
+			"item_model": "minecraft:netherite_spear",
+			"lore": [{"text":"Right Click Attack: Summons Star Showers dealing 5 damage to all entities caught in range.","color":"gray","italic":false}],
+			"piercing_weapon": {
+				"min_reach": 0.0,
+				"max_reach": 10.0,
+				"hitbox_margin": 0.0
+			},
+			"enchantments": { "mana_n_rage:midnight_spear": 1 },
+			"tooltip_display": {
+				"hidden_components": ["minecraft:enchantments"]
+			},
+			"enchantment_glint_override": false,
+			"max_stack_size": 1,
+			"custom_data": "{midnight_spear:1b}"
+		}
+	}
+}

@@ -1,0 +1,1 @@
+execute run function mana_n_rage:midnight_spear/particle

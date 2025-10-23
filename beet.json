@@ -1,0 +1,15 @@
+{
+    "name":"ManaNRage",
+    "description":"Using bolt",
+    "require": [
+        "bolt"
+    ],
+    "data_pack": {
+        "load": ["ManaNRage"]
+    },
+    "resource_pack": {
+        "load": ["ManaNRageRP"]
+    },
+    "pipeline": [ "mecha" ],
+    "output": "build"
+}
