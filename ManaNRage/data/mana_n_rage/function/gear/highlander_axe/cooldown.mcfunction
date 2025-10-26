@@ -1,0 +1,2 @@
+execute as @s if score @s HighlanderAxeRightClickCooldown matches 1.. run scoreboard players remove @s HighlanderAxeRightClickCooldown 1
+execute as @s if score @s HighlanderAxeRightClickCooldown matches 1.. run return run advancement revoke @s only mana_n_rage:highlander_axe_cooldown

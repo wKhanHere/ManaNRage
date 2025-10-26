@@ -1,0 +1,22 @@
+execute if score @s MidnightZoneParticleTick matches 0 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_0
+execute if score @s MidnightZoneParticleTick matches 1 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_1
+execute if score @s MidnightZoneParticleTick matches 2 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_2
+execute if score @s MidnightZoneParticleTick matches 3 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_3
+execute if score @s MidnightZoneParticleTick matches 4 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_4
+execute if score @s MidnightZoneParticleTick matches 5 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_5
+execute if score @s MidnightZoneParticleTick matches 6 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_6
+execute if score @s MidnightZoneParticleTick matches 7 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_7
+execute if score @s MidnightZoneParticleTick matches 8 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_8
+execute if score @s MidnightZoneParticleTick matches 9 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_9
+execute if score @s MidnightZoneParticleTick matches 10 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_10
+execute if score @s MidnightZoneParticleTick matches 11 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_11
+execute if score @s MidnightZoneParticleTick matches 12 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_12
+execute if score @s MidnightZoneParticleTick matches 13 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_13
+execute if score @s MidnightZoneParticleTick matches 14 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_14
+execute if score @s MidnightZoneParticleTick matches 15 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_15
+execute if score @s MidnightZoneParticleTick matches 16 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_16
+execute if score @s MidnightZoneParticleTick matches 17 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_17
+execute if score @s MidnightZoneParticleTick matches 18 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_18
+execute if score @s MidnightZoneParticleTick matches 19 run function mana_n_rage:gear/midnight_spear/midnight_zone_tick_particle/nested_execute_19
+execute as @s run scoreboard players add @s MidnightZoneParticleTick 1
+execute as @s if score @s MidnightZoneParticleTick matches 19.. run scoreboard players set @s MidnightZoneParticleTick 0

@@ -11,5 +11,10 @@
         "load": ["ManaNRageRP"]
     },
     "pipeline": [ "mecha" ],
-    "output": "build"
+    "output": "build",
+    "meta": {
+        "bolt": {
+            "entrypoint" : ["mana_n_rage:main"]
+        }
+    }
 }

@@ -14,21 +14,22 @@
 		"id": "minecraft:netherite_spear",
 		"components": {
 			"!jukebox_playable": {},
-			"item_name": {"text":"Midnight Spear","color":"blue"},
+			"item_name": {"text":"Midnight Spear","color":"#192f70","bold":true,"underlined": true},
 			"item_model": "minecraft:netherite_spear",
-			"lore": [{"text":"Right Click Attack: Summons Star Showers dealing 5 damage to all entities caught in range.","color":"gray","italic":false}],
+			"lore": [{"text":"Left Click: Lunge forward, damaging all entities in your path.\n Each Entity hit grants you one Twilight Charge.\n At 10 Twilight Charges, your next damaging hit with this spear summons a Midnight Zone.\n","color":"gray","italic":false}],
 			"piercing_weapon": {
 				"min_reach": 0.0,
 				"max_reach": 10.0,
-				"hitbox_margin": 0.0
+				"hitbox_margin": 0.5
 			},
 			"enchantments": { "mana_n_rage:midnight_spear": 1 },
-			"tooltip_display": {
-				"hidden_components": ["minecraft:enchantments"]
-			},
 			"enchantment_glint_override": false,
 			"max_stack_size": 1,
-			"custom_data": "{midnight_spear:1b}"
+			"custom_data": "{midnight_spear:1b}",
+      		"minecraft:attribute_modifiers": 
+      			[{"id":"attack_damage","type":"attack_damage","amount":20,"operation":"add_value","slot":"mainhand","display":{"type":"override","value":{"color":"dark_green","text":" 20 Attack Damage"}}},
+      			{"id":"attack_speed","type":"attack_speed","amount":-3,"operation":"add_value","slot":"mainhand","display":{"type":"override","value":{"color":"dark_green","text":" 1 Attack Speed"}}}]
+    
 		}
 	}
 }

@@ -1,6 +1,5 @@
 {
-	"description": "Midnight Spear",
-  "exclusive_set": "minecraft:lunge",
+	"description": "Highlander's Axe",
 	"max_level": 1,
 	"slots": ["hand"],
 	"supported_items": [],
@@ -14,33 +13,15 @@
 		"base": 0,
 		"per_level_above_first": 0
 	},
-	"effects": { "minecraft:post_piercing_attack": [
-      {
-        "effect": {
-          "type": "minecraft:all_of",
-          "effects": [
-            {
-              "type": "minecraft:apply_impulse",
-              "direction": [0,0,0.4],
-              "coordinate_scale": [1,0.2,1],
-              "magnitude": 5
-            },
-            {
-              "type": "minecraft:run_function",
-              "function": "mana_n_rage:gear/midnight_spear/particle"
-            }
-          ]
-        }
-      }
-    ],"minecraft:post_attack": [
+	"effects": { "minecraft:post_attack": [
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "mana_n_rage:gear/midnight_spear/victim"
+          "function": "mana_n_rage:gear/highlander_axe/victim"
         },
         "enchanted": "attacker",
         "affected": "victim",
-        "requirements": {
+        "requirements":[ {
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:entity_properties",
@@ -49,16 +30,16 @@
               "type": "minecraft:armor_stand"
             }
           }
-        }
+        }]
       },
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "mana_n_rage:gear/midnight_spear/self"
+          "function": "mana_n_rage:gear/highlander_axe/self"
         },
         "enchanted": "attacker",
         "affected": "attacker",
-        "requirements": {
+        "requirements":[ {
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:entity_properties",
@@ -67,7 +48,14 @@
               "type": "minecraft:armor_stand"
             }
           }
-        }
+        }]
       }
-    ]}
+    ], "minecraft:tick": [
+        {
+            "effect": {
+            "type": "minecraft:run_function",
+            "function": "mana_n_rage:gear/highlander_axe/selftick"
+            }
+        }
+    ]} 
 }

@@ -1,0 +1,6 @@
+{
+	"criteria": { "tick": {
+		"trigger": "minecraft:tick"
+	}},
+	"rewards": { "function": "mana_n_rage:gear/highlander_axe/cooldown" }
+}

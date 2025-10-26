@@ -1,0 +1,1 @@
+execute as @s[tag=!RoseArmorOn] at @s run tag @s add RoseArmorOn

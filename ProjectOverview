@@ -1,0 +1,26 @@
+# Project Overview — ManaNRage
+
+## TODO
+- [ ] Check if multiple sculk eyes break damaging behavior
+- [ ] Add a `death.attack.sculk_explosion.player` language translation
+
+- [ ] Makes fangs be either owned by the player (worse) or just not hurt stuff in same team (better)
+- [ ] Make it so that midnight zone doesn't target creator (and optionally his team)
+- [ ] Add constellation particles to the midnight zone (the current dodecahedron thing is good enough for dome)
+- [ ] Add abil_1, abil_2, abil_3 for highlander_axe, and probably particles for them
+
+## Done
+- [x] Make it so midnight spear does not grant TwilightCharges on hitting armor stands
+- [x] Make the midnight zone particles
+- [x] Make it so that enchantment name (midnight spear, highlander axe) are shown on the weapon (give them a name)
+
+
+## An explanation for highlander axe:
+- When you first hold the item, you are tagged with HeldHighlander axe, and then your axe cooldown is reset. Now, according to your current attack speed while holding axe (which is your attack speed attribute hence scales off of everything) your cooldown is counted in ticks which is the minimum time length the player ideally holds the axe for to be able to do a full charged attack. I say minimum because the player can hold the axe the whole time, spam his attack, which wont do anything until the minimum time limit is hit then it will add a stack. This is player issue not mine hence i do not care about that, i only care about getting that simulation for an ideal player. Missing hits actually doesn't reset it, so just spam hitting after missing a hit is ideal but not practical (its hard vro)
+- Its code is handled in the order:
+selftick running every tick: this takes attribute atk speed every tick scaled by 100 stored in x. (Searching for changes, apparently minecraft caches some stuff so it shouldnt be too laggy). Then we divide 2000 (20 ticks scaled by 100) by atk speed to get attack cooldown  in ticks stored in y (atk speed is number of atk per second, so cooldown is frequency, thus 1/atk speed, just scaled by 100 to preserve decimals). This arrived value is then the upper limit checked for adding Cooldown counter(1 per tick, and stops if cooldown ticker is equal to y) in the 6th line. once the cooldown condition is met at the optimal attack period ticks time, this value is then checked for in self which is run when an entity is attacked as the attacker while adding stacks to the player. This piece of code now no longer needs to be referenced as proceeding code runs on highlander stacks
+This code should theoretically work for non player entities too, but how would they trigger the special effects anyways :shrug:
+
+## Notes / tips
+- Use the Markdown preview in VS Code (Ctrl+Shift+V) to see a readable view.
+- You can add headings(#), code blocks (## for subheading, - for point), and links as needed.

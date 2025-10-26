@@ -1,0 +1,40 @@
+{
+	"type": "crafting_shaped",
+	"key": {
+		"W": "minecraft:wind_charge",
+		"B": "minecraft:breeze_rod",
+		"I": "minecraft:iron_ingot",
+        "H": "minecraft:heavy_core"
+	},
+	"pattern": [
+		"WHI",
+		" BI",
+		" B "
+	],
+	"result": {
+		"id": "minecraft:netherite_axe",
+		"components": {
+			"!jukebox_playable": {},
+			"item_name": {"text":"☁ Highlander's Axe ☁","color":"#e9f9be","underlined": true},
+			"item_model": "minecraft:iron_axe",
+			"lore": [{"text":"String Here","color":"gray","italic":false}],
+			"enchantments": { "mana_n_rage:highlander_axe": 1 },
+			"enchantment_glint_override": false,
+            "consumable": {
+				"consume_seconds": 2147483647,
+				"animation": "crossbow",
+				"has_consume_particles": false
+			},
+			"use_effects": {
+				"speed_multiplier": 1,
+				"can_sprint": true
+			},
+			"max_stack_size": 1,
+			"custom_data": "{highlander_axe:1b}",
+      		"minecraft:attribute_modifiers": 
+      			[{"id":"attack_damage","type":"attack_damage","amount":13,"operation":"add_value","slot":"mainhand","display":{"type":"override","value":{"color":"dark_green","text":" 13 Attack Damage"}}},
+      			{"id":"attack_speed","type":"attack_speed","amount":-2.8,"operation":"add_value","slot":"mainhand","display":{"type":"override","value":{"color":"dark_green","text":" 1.2 Attack Speed"}}}]
+    
+		}
+	}
+}
