@@ -22,3 +22,6 @@ execute as @a[tag=RoseArmorOn] at @s run function mana_n_rage:gear/rose_armour/a
 
 #HighlanderAxe
 execute as @e[tag=HeldHighlanderAxe] if predicate mana_n_rage:isnotholdinghighlanderaxe run tag @s remove HeldHighlanderAxe
+
+#Alchemical Cauldron
+execute as @e[type=item, nbt = {Item: {id: "minecraft:nether_star"}}] at @s if predicate mana_n_rage:item_in_cauldron_check run function mana_n_rage:blocks/alchemical_cauldron/create

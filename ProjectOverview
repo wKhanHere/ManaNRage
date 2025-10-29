@@ -8,6 +8,10 @@
 - [ ] Make it so that midnight zone doesn't target creator (and optionally his team)
 - [ ] Add constellation particles to the midnight zone (the current dodecahedron thing is good enough for dome)
 - [ ] Add abil_1, abil_2, abil_3 for highlander_axe, and probably particles for them
+- [ ] Make it so that Alchemical Cauldron does not eat multiple nether stars.<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Deny creation function after creation, current predicate aint predicating) <br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Changed the entity to this, see if that fixes the in world check)
+- [ ] Add Recipes for alchemical cauldron, and a crafting starter item. 
 
 ## Done
 - [x] Make it so midnight spear does not grant TwilightCharges on hitting armor stands
@@ -24,3 +28,4 @@ This code should theoretically work for non player entities too, but how would t
 ## Notes / tips
 - Use the Markdown preview in VS Code (Ctrl+Shift+V) to see a readable view.
 - You can add headings(#), code blocks (## for subheading, - for point), and links as needed.
+

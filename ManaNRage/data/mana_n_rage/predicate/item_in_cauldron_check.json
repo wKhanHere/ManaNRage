@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:armor_stand",
+        "nbt": "{Tags:[\"alchemical_cauldron\"]}",
+        "distance": {
+          "x": {
+            "min": 0,
+            "max": 1
+          },
+          "y": {
+            "min": 0,
+            "max": 1
+          },
+          "z": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "blocks": "minecraft:cauldron"
+      }
+    }
+  }
+]
